@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HostelPulse — From Feedback to Action</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--LANDING PAGE-->
+
+<div id="landing">
+
+<nav class="navbar">
+
+    <div class="logo">
+        <div class="logo-box">HP</div>
+        <div>
+            <strong>HOSTEL PULSE</strong>
+            <small>From Feedback to Action.</small>
+        </div>
+
+    </div>
+
+    <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#about">About</a>
+        <button class="nav-login" onclick="showLogin()">Login</button>
+    </div>
+
+</nav>
+
+<section class="hero">
+<div>
+    <div class="hero-tag">SMART HOSTEL SERVICE MANAGEMENT</div>
+    <h1>
+        From feedback
+        <br>
+        to <span>real action.</span>
+    </h1>
+
+    <p>
+        One platform to report, prioritize, resolve and verify
+        hostel and mess problems.
+    </p>
+
+    <div class="hero-buttons">
+        <button class="primary" onclick="showLogin()">Report an Issue →</button>
+        <button class="secondary" onclick="showLogin()">Explore Dashboard</button>
+    </div>
+
+    <div class="credit">A solution by INNNOVATE</div>
+</div>
+
+
+<div class="live-panel">
+
+    <div class="live-head">
+        <span>Live Service Pulse</span>
+        <span class="live">● LIVE</span>
+    </div>
+
+    <div class="issue">
+        <div>
+            <b>Block 32 — Water Supply</b>
+            <small>47 reports • 180 students affected</small>
+        </div>
+        <span class="priority critical">CRITICAL</span>
+    </div>
+
+    <div class="issue">
+        <div>
+            <b>Block 18 — Mess Quality</b>
+            <small>31 reports • 120 students affected</small>
+        </div>
+        <span class="priority high">HIGH</span>
+    </div>
+
+    <div class="progress-box">
+        <div class="progress-text">
+            <span>Resolution Rate</span>
+            <b>86%</b>
+        </div>
+        <div class="progress">
+            <div></div>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="features">
+
+<div class="section-title">
+    <div class="hero-tag">ONE CLOSED LOOP</div>
+    <h2>From complaint to resolution.</h2>
+    <p>Every issue has a measurable journey.</p>
+</div>
+
+<div class="features">
+
+<div class="feature">
+    <div class="feature-icon"></div>
+    <h3>Smart Feedback</h3>
+    <p>Students can report hostel and mess problems quickly.</p>
+</div>
+
+<div class="feature">
+    <div class="feature-icon"></div>
+    <h3>AI Classification</h3>
+    <p>Automatically identify category, sentiment and priority.</p>
+</div>
+
+<div class="feature">
+    <div class="feature-icon"></div>
+    <h3>Complaint Clustering</h3>
+    <p>Similar complaints are grouped to reveal real impact.</p>
+</div>
+
+<div class="feature">
+    <div class="feature-icon"></div>
+    <h3>Action Tracking</h3>
+    <p>Admins assign issues and staff update progress.</p>
+</div>
+
+<div class="feature">
+    <div class="feature-icon"></div>
+    <h3>Resolution Proof</h3>
+    <p>Staff can attach proof before closing an issue.</p>
+</div>
+
+<div class="feature">
+    <div class="feature-icon"></div>
+    <h3>Student Verification</h3>
+    <p>Students confirm whether the issue is actually solved.</p>
+</div>
+
+</div>
+</section>
+
+
+<section class="section dark" id="how">
+
+<div class="section-title">
+    <div class="hero-tag">HOW IT WORKS</div>
+    <h2>Feedback → Action → Verification</h2>
+</div>
+
+<div class="flow">
+
+<div class="flow-item"><div class="flow-number">1</div><span>Student reports</span></div>
+<div class="flow-item"><div class="flow-number">2</div><span>AI analyzes</span></div>
+<div class="flow-item"><div class="flow-number">3</div><span>System prioritizes</span></div>
+<div class="flow-item"><div class="flow-number">4</div><span>Admin assigns</span></div>
+<div class="flow-item"><div class="flow-number">5</div><span>Staff resolves</span></div>
+<div class="flow-item"><div class="flow-number">6</div><span>Student verifies</span></div>
+
+</div>
+
+</section>
+
+
+<section class="section about" id="about">
+
+<div>
+    <div class="hero-tag">ABOUT THE TEAM</div>
+    <h2>Built by INNNOVATE.</h2>
+
+    <p>
+        INNNOVATE is a student Hackathon team focused on building
+        practical technology solutions for real-world problems.
+    </p>
+</div>
+
+<div class="about-box">
+    <b>HOSTEL PULSE</b>
+    <span>From Feedback to Action.</span>
+    <small>Built by INNNOVATE</small>
+</div>
+
+</section>
+
+
+<footer>
+    <b>HOSTEL PULSE</b>
+    <span>Built by INNNOVATE • Hackathon 2026</span>
+</footer>
+
+</div>
+
+
+<!--  LOGIN PAGE -->
+
+<div id="login" class="login-page hidden">
+
+<div class="login-card">
+
+    <div class="login-logo">
+        <div class="logo-box">HP</div>
+        <h2>HOSTEL PULSE</h2>
+        <p>From Feedback to Action.</p>
+    </div>
+
+    <h1>Welcome back</h1>
+    <p class="muted">Select a demo role to continue.</p>
+
+    <div class="roles">
+        <button class="active" onclick="selectRole('student',this)">Student</button>
+        <button onclick="selectRole('admin',this)">Admin</button>
+        <button onclick="selectRole('staff',this)">Staff</button>
+    </div>
+
+    <input id="email" value="student@hostelpulse.demo" placeholder="Email">
+
+    <input type="password" value="123456" placeholder="Password">
+
+    <button class="primary" onclick="login()">Login</button>
+
+    <small class="login-credit">Built by INNNOVATE</small>
+
+</div>
+
+</div>
+
+
+<!--DASHBOARD-->
+
+<div id="dashboard" class="dashboard hidden">
+
+<aside class="sidebar">
+
+<div class="side-logo">
+
+    <div class="logo-box">HP</div>
+
+    <div>
+        <b>HOSTEL PULSE</b>
+        <small>From Feedback to Action.</small>
+    </div>
+
+</div>
+
+<div class="role" id="roleName">STUDENT</div>
+
+<div class="side-nav" id="navigation">
+    <button class="selected" onclick="dashboardHome()"> <span>Dashboard</span></button>
+    <button onclick="complaintsPage()"> <span>Complaints</span></button>
+    <button onclick="analyticsPage()"> <span>Analytics</span></button>
+    <button onclick="messPage()"> <span>Mess Rating</span></button>
+</div>
+
+<div class="side-bottom">
+
+    <div class="user"> Demo User</div>
+
+    <button class="logout" onclick="logout()"> <span>Logout</span></button>
+
+    <small class="built">Built by INNNOVATE</small>
+
+</div>
+
+</aside>
+
+
+<main class="main">
+
+    <div class="topbar"></div>
+
+    <div id="dashboardContent"></div>
+
+</main>
+
+</div>
+
+
+<div id="toast" class="toast hidden"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
