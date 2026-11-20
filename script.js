@@ -83,7 +83,7 @@ function studentDashboard() {
     <div class="panel">
         <div class="panel-title">
             <h3>Report an Issue</h3>
-            <span> AI Powered</span>
+            
         </div>
 
         <textarea id="complaintText" placeholder="Example: No water in bathrooms of Block 32"></textarea>
